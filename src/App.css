@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+.page {
+    margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.interactions {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table {
+    margin: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.table-header {
+    display: flex;
+    line-height: 24px;
+    font-size: 16px;
+    padding: 0 10px;
+    justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.table-empty {
+    margin: 200px;
+    text-align: center;
+    font-size: 16px;
+}
+.table-row {
+    display: flex;
+    line-height: 24px;
+    white-space: nowrap;
+    margin: 10px 0;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #e3e3e3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-header>span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
 }
+
+.table-row>span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+}
+
+.button-inline {
+    border-width: 0;
+    background: transparent;
+    color: inherit;
+    text-align: inherit;
+    -webkit-font-smoothing: inherit;
+    padding: 0;
+    font-size: inherit;
+    cursor: pointer;
+}
+.button-active {
+    border-radius: 0;
+    border-bottom: 1px solid #38BB6C;
+}
+
+/* 
+App2.js
+ */
+
+ .main {
+    max-width: 1200px;
+    width: 80%;
+    margin: 50px auto;
+ }
+
+ form {
+    margin: 5px auto;
+    text-align: center;
+ }
+
+ .row {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 10px;
+ }
+
+ button {
+    background-color: rgb(32, 116, 195);
+    color: white;
+ }
+
+ input {
+    border: solid 1px rgb(166, 160, 160);
+    transition: all 4ms;
+ }
+input:hover,
+input:focus-visible {
+    border: solid 1px rgb(32,116,195);
+}
+
+
+ input:target {
+     border: solid 1px rgb(195, 32, 78);
+ }
